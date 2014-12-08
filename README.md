@@ -13,6 +13,6 @@ Completed user stories:
 Notes:
 
 Walkthrough of all user stories:
-![Video Walkthrough](TwitterWithFragment.gif)
+![Video Walkthrough](TwitterWithFragments.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
