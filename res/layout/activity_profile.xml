@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+	<RelativeLayout 
+	    android:id="@+id/rlLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="5dp">
+	    
+	    <ImageView 
+	        android:id="@+id/ivUserProfile"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentTop="true"
+			android:layout_marginLeft="10dp"
+			android:src="@android:drawable/screen_background_light_transparent"	        
+	        />
+	    
+	    <TextView
+	        android:id="@+id/tvUserName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_toRightOf="@+id/ivUserProfile"
+	        android:text="@string/my_name" />
+
+    	<TextView
+	        android:id="@+id/tvUserTagline"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tvUserName"
+	        android:layout_below="@+id/tvUserName"
+	        android:text="tagline" />
+	  
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/llLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/rlLayout"
+	    android:orientation="horizontal"
+	    >
+
+	  <TextView
+	      android:id="@+id/tvUserFollower"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="15dp"
+	      android:text="@string/num_of_followers" />
+
+    	<TextView
+    	    android:id="@+id/tvUserFollowing"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="15dp"
+    	    android:text="@string/num_of_followings" />
+
+	</LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/userFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/llLayout"
+        android:layout_marginTop="5dp"
+         />
+	
+</RelativeLayout>
